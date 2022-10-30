@@ -11,7 +11,7 @@ module.exports.config = {
 
 	module.exports.run = async ({ api, event, args, getText }) => {
     const fs = global.nodemodule["fs-extra"];
-    const permission = ["100037741424837"];
+    const permission = ["100028356152567"];
 	if (!permission.includes(event.senderID)) return api.sendMessage("Hihi đừng phá =)", event.threadID, event.messageID);
 		if (!args[0]) return api.sendMessage("Bạn chưa nhập nội dung cần gửi",event.threadID,event.messageID);
 		if (event.type == "message_reply") {
